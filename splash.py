@@ -25,16 +25,16 @@ class SplashScreen(Frame):
 if __name__ == '__main__':
     root = Tk()
 
-    backDrop = PhotoImage(file = "logo.gif")
+    backDrop = PhotoImage(file = "image1.gif")
 
     sp = SplashScreen(root)
-    sp.config(bg="#696969")
+    sp.config(bg="#2B2B2B")
 
     m = Label(sp, image = backDrop)
     m.image = backDrop
     m.pack(side=TOP, expand=YES)
-    m.config(bg="#696969", justify=CENTER, font=("calibri", 29))
+    m.config(bg="#2B2B2B", justify=CENTER, font=("calibri", 29))
 
     
-    Button(sp, text="Press this button to kill the program", bg='red', command=root.destroy).pack(side=BOTTOM, fill=X)
+    Button(sp, text="Press this button to kill the program", bg='white', command=root.destroy).pack(side=BOTTOM, fill=X)
     root.mainloop()
